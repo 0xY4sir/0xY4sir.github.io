@@ -1282,3 +1282,113 @@ body:not(.user-is-tabbing) a:focus {
         line-height: 1.5;
     }
 }
+
+
+/* --------------------------------------- */
+/* ----- Mobile Header Navigation Fix ----- */
+/* --------------------------------------- */
+
+@media (max-width: 768px) {
+    .nav {
+        padding: 1.5rem 0;
+    }
+    
+    .nav__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.8rem;
+        justify-items: center;
+        width: 100%;
+    }
+    
+    .nav__item {
+        margin: 0 !important;
+        margin-bottom: 0.5rem !important;
+        text-align: center;
+    }
+    
+    .nav__link {
+        font-size: 1.4rem;
+        padding: 0.8rem 0.5rem;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav__items {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+    
+    .nav__link {
+        font-size: 1.3rem;
+        padding: 0.6rem 0.3rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav__items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .nav__link {
+        font-size: 1.2rem;
+    }
+}
+
+/* --------------------------------------- */
+/* ----- Mobile Header Buttons Fix ----- */
+/* --------------------------------------- */
+
+@media (max-width: 768px) {
+    .header__text .btn {
+        display: inline-block;
+        width: auto;
+        margin: 0.5rem;
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+    }
+    
+    .header__text .btn:first-child {
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .header__text .btn {
+        display: block;
+        width: 100%;
+        margin: 0.8rem 0;
+        padding: 1.2rem 2rem;
+        font-size: 1.5rem;
+    }
+    
+    .header__text .btn:first-child {
+        margin-top: 0.8rem;
+    }
+}
+
+/* --------------------------------------- */
+/* ----- Mobile Header Text Fix ----- */
+/* --------------------------------------- */
+
+@media (max-width: 500px) {
+    .header__text {
+        padding: 0 1rem;
+        text-align: center;
+    }
+    
+    .header__text p {
+        font-size: 1.6rem;
+        line-height: 1.4;
+        margin: 1rem 0 2rem;
+        transform: none !important;
+    }
+    
+    .heading-primary {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+
