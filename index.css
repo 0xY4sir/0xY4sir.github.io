@@ -1053,3 +1053,232 @@ body:not(.user-is-tabbing) a:focus {
         font-size: 2rem;
     }
 }
+
+/* --------------------------------------- */
+/* ----- Mobile Navigation Fix ----- */
+/* --------------------------------------- */
+
+@media (max-width: 768px) {
+    .nav__items {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .nav__item {
+        margin-bottom: 1rem;
+        margin-right: 1.5rem !important;
+    }
+    
+    .nav__item:last-child {
+        margin-right: 0 !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav__items {
+        gap: 0.5rem;
+    }
+    
+    .nav__item {
+        margin-right: 1rem !important;
+        margin-bottom: 0.8rem;
+    }
+    
+    .nav__link {
+        font-size: 1.6rem;
+        padding: 0.8rem 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav__items {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .nav__item {
+        margin-right: 0 !important;
+        margin-bottom: 0.5rem;
+    }
+    
+    .nav__link {
+        font-size: 1.5rem;
+    }
+}
+
+/* --------------------------------------- */
+/* ----- Mobile About Section Fix ----- */
+/* --------------------------------------- */
+
+@media (max-width: 768px) {
+    .about__text--fullwidth {
+        padding: 0 1rem;
+    }
+    
+    .about__text--fullwidth p {
+        font-size: 1.6rem;
+        line-height: 1.6;
+        text-align: center;
+        max-width: 100%;
+    }
+    
+    .skills-section {
+        margin: 2rem 0;
+        padding: 1.5rem 0;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .skill-category {
+        padding: 1.5rem;
+    }
+    
+    .skill-category h4 {
+        font-size: 1.8rem;
+    }
+    
+    .skills-list li {
+        font-size: 1.4rem;
+        padding: 0.3rem 0;
+    }
+}
+
+/* --------------------------------------- */
+/* ----- Mobile Contact Section Fix ----- */
+/* --------------------------------------- */
+
+@media (max-width: 768px) {
+    .contact__info {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    
+    .contact__info p {
+        font-size: 1.6rem;
+        line-height: 1.6;
+        text-align: center;
+    }
+    
+    .contact__email-btn {
+        padding: 1.2rem 2rem;
+        font-size: 1.6rem;
+    }
+    
+    .contact__social {
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    .contact__social-link {
+        width: 4rem;
+        height: 4rem;
+    }
+    
+    .contact__social-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+/* --------------------------------------- */
+/* ----- Mobile Header Fix ----- */
+/* --------------------------------------- */
+
+@media (max-width: 500px) {
+    .header__text {
+        padding: 0 1rem;
+    }
+    
+    .header__text .btn {
+        display: block;
+        width: 100%;
+        margin: 1rem 0;
+        padding: 1.2rem 2rem;
+        font-size: 1.6rem;
+    }
+    
+    .header__text .btn:first-child {
+        margin-top: 2rem;
+    }
+}
+
+/* --------------------------------------- */
+/* ----- Mobile General Spacing Fix ----- */
+/* --------------------------------------- */
+
+@media (max-width: 768px) {
+    section {
+        padding: 4rem 0;
+    }
+    
+    h2 {
+        font-size: 2.8rem;
+        margin-bottom: 2rem;
+    }
+    
+    h2::after {
+        margin: 1rem auto;
+    }
+    
+    .row {
+        padding: 0 1rem;
+    }
+}
+
+/* --------------------------------------- */
+/* ----- Mobile Certifications Fix ----- */
+/* --------------------------------------- */
+
+@media (max-width: 768px) {
+    #certifications .work__box {
+        margin-bottom: 8rem;
+    }
+    
+    .work__text, 
+    .work__image-box {
+        width: 100%;
+        flex: none;
+    }
+    
+    .work__image-box {
+        margin: 2rem 0 0 0;
+    }
+    
+    .cert-level {
+        font-size: 1rem;
+        padding: 0.2rem 0.8rem;
+    }
+}
+
+/* --------------------------------------- */
+/* ----- Mobile Timeline Fix ----- */
+/* --------------------------------------- */
+
+@media (max-width: 500px) {
+    .timeline__item {
+        padding-left: 2rem;
+    }
+    
+    .timeline__content {
+        margin-left: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .timeline__content h3 {
+        font-size: 1.8rem;
+    }
+    
+    .timeline__subtitle {
+        font-size: 1.4rem;
+    }
+    
+    .timeline__description {
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+}
