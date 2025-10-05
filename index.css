@@ -1035,3 +1035,21 @@ body:not(.user-is-tabbing) a:focus {
         transform: none;
     }
 }
+
+/* --------------------------------------- */
+/* ----- Mobile Text Size Fix ----- */
+/* --------------------------------------- */
+
+@media (max-width: 500px) {
+    body {
+        font-size: 1.6rem;
+    }
+    
+    .heading-primary {
+        font-size: 4rem;
+    }
+    
+    .header__text p {
+        font-size: 2rem;
+    }
+}
