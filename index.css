@@ -457,23 +457,45 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .header {
-    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
+    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .2)), 
         url('./images/header.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     font-size: var(--font-size-normal);
+    position: relative;
+}
+
+/* Add a brighter overlay for better text readability while keeping background visible */
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.1) 50%,
+        rgba(0, 0, 0, 0.3) 100%
+    );
+    z-index: 1;
 }
 
 .header__text-box {
     height: calc(100vh - 100px);
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
 .header__text {
     width: 100%;
+    position: relative;
+    z-index: 2;
 }
 
 .header__text p {
@@ -481,6 +503,7 @@ body:not(.user-is-tabbing) a:focus {
     max-width: var(--container-medium-width);
     font-family: 'Jost', sans-serif;
     font-size: var(--font-size-medium);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .header__buttons {
@@ -489,12 +512,17 @@ body:not(.user-is-tabbing) a:focus {
     flex-wrap: wrap;
 }
 
+.heading-primary {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 @media(max-width: 768px) {
     .header {
         text-align: center;
         height: auto;
         min-height: 100vh;
         padding: 8rem 0;
+        background-attachment: scroll; /* Better performance on mobile */
     }
 
     .header__text-box {
